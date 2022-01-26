@@ -1,4 +1,4 @@
-from transformers.modeling_bert import *
+from transformers.models.bert.modeling_bert import *
 from torch.nn.utils.rnn import pad_sequence
 from torchcrf import CRF
 

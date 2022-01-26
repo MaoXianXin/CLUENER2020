@@ -72,7 +72,7 @@ def load_dev(mode):
 
 def run():
     """train the model"""
-    # set the logger
+    # set the logger 训练日志保存地址
     utils.set_logger(config.log_dir)
     logging.info("device: {}".format(config.device))
     # 处理数据，分离文本和标签

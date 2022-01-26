@@ -39,7 +39,7 @@ else:
     device = torch.device("cpu")
 
 labels = ['address', 'book', 'company', 'game', 'government',
-          'movie', 'name', 'organization', 'position', 'scene']
+          'movie', 'name', 'organization', 'position', 'scene', 'tech']
 
 label2id = {
     "O": 0,
@@ -53,26 +53,29 @@ label2id = {
     'B-organization': 8,
     'B-position': 9,
     'B-scene': 10,
-    "I-address": 11,
-    "I-book": 12,
-    "I-company": 13,
-    'I-game': 14,
-    'I-government': 15,
-    'I-movie': 16,
-    'I-name': 17,
-    'I-organization': 18,
-    'I-position': 19,
-    'I-scene': 20,
-    "S-address": 21,
-    "S-book": 22,
-    "S-company": 23,
-    'S-game': 24,
-    'S-government': 25,
-    'S-movie': 26,
-    'S-name': 27,
-    'S-organization': 28,
-    'S-position': 29,
-    'S-scene': 30
+    'B-tech': 11,
+    "I-address": 12,
+    "I-book": 13,
+    "I-company": 14,
+    'I-game': 15,
+    'I-government': 16,
+    'I-movie': 17,
+    'I-name': 18,
+    'I-organization': 19,
+    'I-position': 20,
+    'I-scene': 21,
+    'I-tech': 22,
+    "S-address": 23,
+    "S-book": 24,
+    "S-company": 25,
+    'S-game': 26,
+    'S-government': 27,
+    'S-movie': 28,
+    'S-name': 29,
+    'S-organization': 30,
+    'S-position': 31,
+    'S-scene': 32,
+    'S-tech': 33
 }
 
 id2label = {_id: _label for _label, _id in list(label2id.items())}
